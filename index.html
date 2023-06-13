@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>Google</title>
+        <script>
+            function googlesearch(){
+                let searchInput = document.getElementById("search-input").value;
+                let searchURL = "https://www.google.com/search?q=" +searchInput  ;
+                window.location.href = searchURL;
+            }
+        </script>
+        <link rel="icon" href="images/Google-icon.png">
+        <link rel="stylesheet" type="text/css" href="google_css.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <div id="nav" class="container-fluid">
+            <ul id="top_navbar" class="navbar-nav">
+                <li class="top_navbar" class="nav-item"><a href="https://Gmail.com"class="nav-link">Gmail</a></li>
+                <li class="top_navbar" class="nav-item"><a class="nav-link" href="g_images.html" target="_self">Images</a></li>
+                <li class="top_navbar" class="nav-item"><a href="Advanced_search.html"class="nav-link">Advanced Search</a></li>
+
+                <li class="top_navbar1" class="nav-item"><a href="#"class="nav-link"><img id="menu" src="images/gmenu.png" alt="menu"></a></li>
+                
+                <li class="top_navbar1" class="nav-item"><a href="#" class="nav-link" id="account"><button type="button" class="btn btn-primary">Sign In</button></a></li>
+            </ul>
+            </div>
+        </nav>
+        <div id="google_image">
+            <img src="images/google_head.png" id="gh">
+        </div>
+        <div style="padding:1rem">
+            <div id="search_bar_div" style="padding:0px 30%">
+                <form id="sbf" action="googlesearch()" class="sbp">
+                    <div id="sbd">
+                    
+                       
+                            <img  class="sbp" src="images/search_icon.jpeg" alt="search_icon" style="width:15px">
+                            <input  type="text" id="sb" name="q" class="search_input" style="width:450; border:none;">
+                       
+                        <div class="sbp">
+                            <img src="images/mic_icon.jpeg" alt="mic" style="width:15px">
+                        </div>
+                        <div class="sbp">
+                            <img src="images/lens_icon.jpeg" alt="lens" style="width:30px">
+                        </div>
+                            
+                         </div>    
+                </div>
+                <div id="search_button">
+                    <button  class="btn btn-light"style="margin:1rem">Google Search</button>
+                    <a href="https://www.google.com/doodles">
+                        <button  type="submit" class="btn btn-light">Im feeling lucky</button>
+                    </a>
+                </div>
+            </form>
+            </div>
+        </div>
+        <!--<div>
+            <label style="display:inline-block;">Google offered in:</label>
+            <ul id="langs">
+                <li><a href="">hindi</a></li>
+                <li><a href="">english</a></li>
+                <li><a href="">telugu</a></li>
+                <li><a href="">marati</a></li>
+                <li><a href="">kannada</a></li>
+                
+                
+            </ul>
+        </div>-->
+        
+    </body>
+    <footer>
+        <div style="height:3rem ;padding:1rem">
+            <p>India</p>
+        </div>
+        <div style="display:flex; justify-content: space-between;" >
+            <ul class="footer_list">
+                <li><a href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a><li>
+                <li><a href="https://ads.google.com/intl/en_in/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1"> Advertising</a></li>
+                <li><a href="https://www.google.com/intl/en_in/business/"> Business</a></li>
+                <li><a href="https://www.google.com/search/howsearchworks/?fg=1">How Search works</a></li>
+            </ul>
+            <ul class="footer_list" style="justify-items: flex-end;">
+                <li><a href="https://policies.google.com/privacy?hl=en-IN&fg=1"> Privacy</a></li>
+                <li><a href="https://policies.google.com/terms?hl=en-IN&fg=1">Terms</a></li>
+                <li><a href="">Settings</a></li>
+            </ul>
+
+        </div>
+    </footer>
+</html>
